@@ -1,9 +1,22 @@
-import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Houses from "./pages/Houses";
+import Membership from "./pages/Membership";
+import SignIn from "./pages/SignIn";
+import Wellness from "./pages/Wellness";
+import Events from "./pages/Events";
+
 export default function App() {
   return (
     <>
-      <Header />
-      <h1>hi</h1>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Houses" element={<Houses />} />
+        <Route path="/Wellness" element={<Wellness />} />
+        <Route path="/Events" element={<Events />} />
+        <Route path="/Membership" element={<Membership />} />
+        <Route path="/SignIn" element={<SignIn />} />
+      </Routes>
     </>
   );
 }
