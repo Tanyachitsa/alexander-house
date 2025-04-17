@@ -18,6 +18,12 @@ li {
   padding: 0 auto;
   margin-left: 100px;
 }
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #d9c2ba;
+  margin-top: 100px;
+}
 .logo {
   height: 90px;
   padding-left: 0px;
