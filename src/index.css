@@ -35,3 +35,15 @@ footer {
   width: 100%;
   padding-top: 7px;
 }
+.homepage-summary {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 28px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 200px;
+}
+
+.homepage-summary-title {
+  font-size: 40px;
+}
