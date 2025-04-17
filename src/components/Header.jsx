@@ -1,19 +1,33 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
-    <nav>
+    <nav style={{ marginBottom: "30px" }}>
       <img
         className="logo"
         src="/src/Media/AlexanderHouse.png"
         alt="Alexander House logo"
       />
       <ul>
-        <li>Home</li>
-        <li>Houses</li>
-        <li>Wellness</li>
-        <li>Events</li>
-        <li>Membership</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/Houses">
+          <li>Houses</li>
+        </Link>
+        <Link to="/Wellness">
+          <li>Wellness</li>
+        </Link>
+        <Link to="/Events">
+          <li>Events</li>
+        </Link>
+        <Link to="/Membership">
+          <li>Membership</li>
+        </Link>
       </ul>
-      <span className="sign-in">Sign in</span>
+      <Link to="/SignIn">
+        <span className="sign-in">Sign in</span>
+      </Link>
     </nav>
   );
 }
