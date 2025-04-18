@@ -112,3 +112,9 @@ footer {
 .membershipButton:active {
   box-shadow: 0 2px #666;
 }
+.house-img {
+  height: 300px;
+  width: auto;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
