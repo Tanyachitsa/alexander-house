@@ -118,3 +118,18 @@ footer {
   padding-left: 20px;
   padding-bottom: 10px;
 }
+.events-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whats-on-button,
+.private-hire-button {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 7px;
+  background-color: #ffff;
+  color: black;
+  border: none;
+  border-bottom: 2px black solid;
+}
