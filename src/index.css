@@ -126,10 +126,15 @@ footer {
 .whats-on-button,
 .private-hire-button {
   margin-top: 20px;
+
   border-radius: 15px;
   padding: 7px;
   background-color: #ffff;
   color: black;
   border: none;
   border-bottom: 2px black solid;
+}
+.show-info {
+  text-align: center;
+  margin-top: 100px;
 }
