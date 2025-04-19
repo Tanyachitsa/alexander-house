@@ -5,7 +5,7 @@ export default function Wellness() {
   return (
     <>
       <Header />
-      <h1 style={{ textAlign: "center", paddingTop: "20px", color: "#4E3D3A" }}>
+      <h1 style={{ textAlign: "center", paddingTop: "20px" }}>
         - Gym and Wellness -
       </h1>
       <p
@@ -37,13 +37,18 @@ export default function Wellness() {
             />
           </div>
           <div class="col">
-            <h2 style={{ color: "#4E3D3A" }}>Our Gym</h2>
-            <p style={{ fontSize: "18px", marginBottom: "40px" }}>
+            <h2 style={{ color: "#3A2D2F" }}>Our Gym</h2>
+            <p
+              style={{
+                fontSize: "18px",
+                marginBottom: "40px",
+              }}
+            >
               Our private gym features premium equipment, personal training, and
               space to move at your own pace. Designed for energy, strength, and
               everyday performance.
             </p>
-            <h3>Opening Hours</h3>
+            <h3> Opening Hours</h3>
             <p>
               Monday–Friday: 6:00 AM – 10:00 PM <br />
               Saturday–Sunday: 7:00 AM – 9:00 PM
@@ -65,7 +70,7 @@ export default function Wellness() {
       >
         <div class="row">
           <div class="col">
-            <h2 style={{ color: "#4E3D3A" }}>Our Spa</h2>
+            <h2>Our Spa</h2>
             <p style={{ fontSize: "18px" }}>
               Step into calm with tailored treatments, saunas, and serene spaces
               for rest and renewal. Wellness at Alexander House is where we
@@ -104,7 +109,7 @@ export default function Wellness() {
               height={500}
               style={{ paddingBottom: "20px" }}
             />
-            <h3 style={{ color: "#4E3D3A" }}>Guest Passes</h3>
+            <h3>Guest Passes</h3>
             <br />
             <p style={{ fontSize: "20px" }}>
               Members can invite guests to experience Alexander House’s wellness
@@ -119,7 +124,7 @@ export default function Wellness() {
               height={500}
               style={{ paddingBottom: "20px" }}
             />
-            <h3 style={{ color: "#4E3D3A" }}>Personal Training</h3>
+            <h3>Personal Training</h3>
             <br />
             <p style={{ fontSize: "20px" }}>
               Achieve your goals with expert guidance. Our certified trainers
@@ -134,9 +139,9 @@ export default function Wellness() {
               height={500}
               style={{ paddingBottom: "20px" }}
             />
-            <h3 style={{ color: "#4E3D3A" }}>Classes</h3>
+            <h3>Classes</h3>
             <br />
-            <p style={{ fontSize: "20px" }}>
+            <p style={{ fontSize: "20px", color: "#3A2D2F" }}>
               From strength training to mindfulness and movement, our schedule
               features a curated mix of group classes led by top instructors —
               energising, grounding, and inspiring.
