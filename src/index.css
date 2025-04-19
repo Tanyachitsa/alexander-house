@@ -1,6 +1,6 @@
 body {
   max-width: 100%;
-  background-color: #fcfef3;
+  font-family: "Newsreader", serif !important;
 }
 nav {
   display: flex;
@@ -21,9 +21,24 @@ li {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #d9c2ba;
   margin-top: 100px;
+  background-color: #54353a;
 }
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 2rem;
+  text-indent: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+  background-color: #bfa6a0;
+}
+
 .logo {
   height: 90px;
   padding-left: 0px;
@@ -39,9 +54,11 @@ footer {
   font-size: 30px;
   text-align: center;
   margin-top: 28px;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-bottom: 200px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .homepage-summary-title {
@@ -81,7 +98,7 @@ footer {
   background-color: #ffff;
   color: black;
   border: none;
-  border-bottom: 2px black solid;
+  border: 1.5px black solid;
 }
 .button-info:hover {
   border-color: white;
@@ -100,7 +117,7 @@ footer {
   background-color: #ffff;
   color: black;
   border: none;
-  border-bottom: 2px black solid;
+  border: 1.5px black solid;
 }
 .membershipButton:hover {
   border-color: white;
@@ -132,9 +149,72 @@ footer {
   background-color: #ffff;
   color: black;
   border: none;
-  border-bottom: 2px black solid;
+  border: 1.5px black solid;
 }
 .show-info {
   text-align: center;
   margin-top: 100px;
+}
+.form-signin {
+  display: flex;
+  justify-content: center;
+}
+.button-submit {
+  border-radius: 15px;
+  padding: 7px;
+  margin-top: 30px;
+  background-color: #ffff;
+  color: black;
+  border: none;
+  border-bottom: 1.5px black solid;
+  border: 1.5px black solid;
+}
+.button-submit:hover {
+  border-color: white;
+  background-color: #ede8dc;
+  opacity: 0.8;
+  transition: 0.5s;
+  box-shadow: 0 5px #999;
+}
+.button-submit:active {
+  box-shadow: 0 2px #666;
+}
+.membershipForm {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.membership-box {
+  border-color: #000000;
+  border-radius: 10px;
+  margin-right: 30px;
+  padding: 30px;
+  background-color: #f8f5f0;
+}
+.sign-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-button {
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 30px;
+  background-color: #ffff;
+  color: black;
+  border: none;
+  border: 1.5px black solid;
+}
+.sign-in-button:hover {
+  border-color: white;
+  background-color: #ede8dc;
+  opacity: 0.8;
+  transition: 0.5s;
+  box-shadow: 0 5px #999;
+}
+.sign-in-button:active {
+  box-shadow: 0 2px #666;
+}
+.form-select {
+  background-color: #bfa6a0;
 }
