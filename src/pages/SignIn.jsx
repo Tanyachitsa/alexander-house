@@ -9,7 +9,6 @@ export default function SignIn() {
           textAlign: "center",
           marginTop: "50px",
           marginBottom: "80px",
-          color: "#4E3D3A",
         }}
       >
         - Sign In -
