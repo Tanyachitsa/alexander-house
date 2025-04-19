@@ -14,7 +14,12 @@ export default function Hire() {
             />
           </div>
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+              }}
+            >
               Weddings
             </h1>
             <p style={{ fontSize: "23px" }}>
@@ -29,7 +34,12 @@ export default function Hire() {
       <div className="container text-center homepage">
         <div className="row">
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+              }}
+            >
               Private room
             </h1>
             <p style={{ fontSize: "23px" }}>
@@ -59,7 +69,12 @@ export default function Hire() {
             />
           </div>
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+              }}
+            >
               Meeting & Business events
             </h1>
             <p style={{ fontSize: "23px" }}>
