@@ -13,15 +13,22 @@ export default function Homepage() {
         autoPlay
         loop
         muted
-        style={{ marginBottom: "100px" }}
       ></video>
-      <br />
-      <p
-        className="homepage-summary"
-        style={{ color: "#DDD0B9", backgroundColor: "#6E4D57" }}
+      <h1
+        style={{
+          paddingTop: "100px",
+          textAlign: "center",
+          fontSize: "60px",
+          fontWeight: "80px",
+          paddingBottom: "40px",
+          marginBottom: "0px",
+        }}
       >
+        Welcome to Alexander house
+      </h1>
+      <p className="homepage-summary">
         <em className="homepage-summary-title">
-          <strong style={{ fontSize: "55px" }}>Alexander House </strong>
+          <strong>Alexander House </strong>
           is a refined sanctuary for modern professionals, creatives, and
           discerning minds.
         </em>
@@ -32,7 +39,6 @@ export default function Homepage() {
         memberships, tailored events, and a focus on community over crowd,
         Alexander House is more than a club — it's your second home.
       </p>
-      <hr />
 
       <div
         className="container text-center homepage"
@@ -42,7 +48,7 @@ export default function Homepage() {
           <div className="col">
             <img
               className="homepage-stays"
-              src="/src/Media/homepage-stays.jpg"
+              src="/src/Media/houseMedia/egypt.jpg"
               alt="image of a hotel with a pool"
             />
           </div>
@@ -51,7 +57,6 @@ export default function Homepage() {
               style={{
                 fontStyle: "italic",
                 textDecoration: "underline",
-                color: "#4E3D3A",
               }}
             >
               Stays
@@ -74,7 +79,6 @@ export default function Homepage() {
               style={{
                 fontStyle: "italic",
                 textDecoration: "underline",
-                color: "#4E3D3A",
               }}
             >
               Events
@@ -85,7 +89,7 @@ export default function Homepage() {
               celebration of taste, thought, and community.
             </p>
             <Link to="/Events">
-              <button className="button-info">Find out More</button>
+              <button className=" events">Find out More</button>
             </Link>
           </div>
           <div className="col">
@@ -111,7 +115,6 @@ export default function Homepage() {
               style={{
                 fontStyle: "italic",
                 textDecoration: "underline",
-                color: "#4E3D3A",
               }}
             >
               Wellness
