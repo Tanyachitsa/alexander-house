@@ -11,7 +11,6 @@ export default function Membership() {
           textAlign: "center",
           paddingBottom: "20px",
           paddingTop: "60px",
-          color: "#4E3D3A",
         }}
       >
         - Membership -
@@ -36,7 +35,7 @@ export default function Membership() {
         style={{ marginTop: "50px", marginBottom: "100px" }}
       >
         <div className="row">
-          <div className="col border membership-box" style={{ border: "" }}>
+          <div className="col border membership-box">
             <h3>Full Membership</h3>
             <br />
             <p>
@@ -89,6 +88,7 @@ export default function Membership() {
               Monthly Fee: <strong>£180</strong>
             </h6>
             <br />
+            E3D3A"
             <h6>Annual Fee: </h6>
             <h3>£1950</h3>
           </div>
@@ -100,7 +100,6 @@ export default function Membership() {
           paddingBottom: "20px",
           marginTop: "70px",
           fontSize: "30px",
-          color: "#4E3D3A",
         }}
       >
         Additionals
@@ -120,7 +119,7 @@ export default function Membership() {
         </li>
       </ul>
       <hr />
-      <h1 style={{ textAlign: "center", marginTop: "60px", color: "#4E3D3A" }}>
+      <h1 style={{ textAlign: "center", marginTop: "60px" }}>
         Membership Form
       </h1>
 
