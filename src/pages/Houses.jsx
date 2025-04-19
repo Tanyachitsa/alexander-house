@@ -5,7 +5,9 @@ export default function Houses() {
   return (
     <>
       <Header />
-      <h1 style={{ textAlign: "center", marginTop: "50px" }}>- Houses -</h1>
+      <h1 style={{ textAlign: "center", marginTop: "50px", color: "#4E3D3A" }}>
+        - Houses -
+      </h1>
       <p
         style={{
           textAlign: "center",

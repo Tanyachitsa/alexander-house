@@ -23,6 +23,7 @@ export default function Events() {
           textAlign: "center",
           marginTop: "50px",
           marginBottom: "30px",
+          color: "#4E3D3A",
         }}
       >
         - Events -

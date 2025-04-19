@@ -16,11 +16,14 @@ export default function Homepage() {
         style={{ marginBottom: "100px" }}
       ></video>
       <br />
-      <p className="homepage-summary">
+      <p
+        className="homepage-summary"
+        style={{ color: "#DDD0B9", backgroundColor: "#6E4D57" }}
+      >
         <em className="homepage-summary-title">
-          <strong style={{ fontSize: "55px" }}>Alexander House </strong>is a
-          refined sanctuary for modern professionals, creatives, and discerning
-          minds.
+          <strong style={{ fontSize: "55px" }}>Alexander House </strong>
+          is a refined sanctuary for modern professionals, creatives, and
+          discerning minds.
         </em>
         <br />
         Designed for those who value privacy, connection, and elevated living,
@@ -44,7 +47,13 @@ export default function Homepage() {
             />
           </div>
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+                color: "#4E3D3A",
+              }}
+            >
               Stays
             </h1>
             <p style={{ fontSize: "23px" }}>
@@ -61,7 +70,13 @@ export default function Homepage() {
       <div className="container text-center homepage">
         <div className="row">
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+                color: "#4E3D3A",
+              }}
+            >
               Events
             </h1>
             <p style={{ fontSize: "23px" }}>
@@ -92,7 +107,13 @@ export default function Homepage() {
             />
           </div>
           <div className="col">
-            <h1 style={{ fontStyle: "italic", textDecoration: "underline" }}>
+            <h1
+              style={{
+                fontStyle: "italic",
+                textDecoration: "underline",
+                color: "#4E3D3A",
+              }}
+            >
               Wellness
             </h1>
             <p style={{ fontSize: "23px" }}>
