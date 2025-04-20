@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (
@@ -8,7 +9,13 @@ export default function Header() {
         src="/src/Media/AlexanderHouse.png"
         alt="Alexander House logo"
       />
-      <ul>
+      <motion.ul
+        key={location.pathname}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
         <Link to="/" style={{ textDecorationLine: "none" }}>
           <li>Home</li>
         </Link>
@@ -24,7 +31,7 @@ export default function Header() {
         <Link to="/Membership" style={{ textDecorationLine: "none" }}>
           <li>Membership</li>
         </Link>
-      </ul>
+      </motion.ul>
       <Link
         to="/SignIn"
         style={{ textDecorationLine: "none", color: "#2A2A2A" }}
