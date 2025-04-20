@@ -36,6 +36,7 @@ footer {
   margin-top: 100px;
   border-top: 5px solid #a8b6a1;
   color: #2a2a2a;
+  text-align: center;
 }
 
 input[type="email"],
@@ -64,7 +65,7 @@ input[type="password"] {
   padding-top: 7px;
 }
 .homepage-summary {
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
   padding-left: 250px;
   padding-right: 250px;
@@ -79,11 +80,11 @@ input[type="password"] {
 }
 .homepage-stays,
 .homepage-wellness {
-  height: 300px;
+  height: 500px;
   padding-left: 40px;
 }
 .homepage-events {
-  width: 450px;
+  height: 450px;
   padding-right: 40px;
   object-fit: cover;
 }
@@ -243,4 +244,10 @@ input[type="password"] {
 }
 .form-select {
   background-color: #bbae99;
+}
+.icon-container {
+  color: #a8b6a1;
+}
+.icons-social {
+  padding-right: 30px;
 }
