@@ -1,6 +1,6 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A refined digital experience built with React + Vite, designed to emulate a luxury private members club. Created as part of my front-end portfolio.
 
 Currently, two official plugins are available:
 
