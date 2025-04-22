@@ -8,17 +8,16 @@ import {
 export default function Footer() {
   return (
     <footer>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
+      <div className="container text-center">
+        <div className="row">
+          <div className="col">
             <img
               src="./src/Media/award.png"
               alt="award pictures"
               height={150}
             />
           </div>
-          <div class="col">
-            {" "}
+          <div className="col">
             <p className="address-container">
               Alexander House
               <br />
@@ -34,7 +33,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faTwitter} className="icons-social" />
             </div>
           </div>
-          <div class="col">
+          <div className="col">
             <h4 style={{ textDecoration: "underline" }}>Careers</h4>
             Email: careers@alexanderhouse.co.uk <br /> Phone: +44 (0)20 7946
             5678 <br />
