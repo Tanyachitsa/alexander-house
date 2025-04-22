@@ -1,7 +1,22 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import React from "react";
+import { auth } from "../data/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import LogOut from "../pages/SignOut";
 
 export default function Header() {
+  const [user] = useAuthState(auth);
+
+  const handleSignOut = async () => {
+    try {
+      await auth.signOut();
+    } catch (err) {
+      console.error("Sign out error:", err);
+    }
+  };
   return (
     <nav>
       <img
@@ -32,12 +47,25 @@ export default function Header() {
           <li>Membership</li>
         </Link>
       </motion.ul>
-      <Link
-        to="/SignIn"
-        style={{ textDecorationLine: "none", color: "#2A2A2A" }}
-      >
-        <div className="sign-in">Sign in</div>
-      </Link>
+      {user ? (
+        <div
+          className="user-info"
+          style={{ display: "flex", alignItems: "center", gap: "10px" }}
+        >
+          <FontAwesomeIcon icon={faUser} className="header-icon" />
+          <br />
+          <Link to="/logout">
+            <p className="logout-button">Log out</p>
+          </Link>
+        </div>
+      ) : (
+        <Link
+          to="/SignIn"
+          style={{ textDecorationLine: "none", color: "#2A2A2A" }}
+        >
+          <div className="sign-in">Sign in</div>
+        </Link>
+      )}
     </nav>
   );
 }
