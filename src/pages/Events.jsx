@@ -5,9 +5,13 @@ import WhatsOn from "../components/WhatsOn";
 import Hire from "../components/Hire";
 import FadeInSection from "../animations/FadeInSection";
 import { Link } from "react-router-dom";
+import { auth } from "../data/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+
 export default function Events() {
   const [showHire, setShowHire] = React.useState(false);
   const [showEvents, setShowEvents] = React.useState(false);
+  const [user] = useAuthState(auth);
 
   function toggleHire() {
     setShowHire((prevHire) => !prevHire);
@@ -63,20 +67,37 @@ export default function Events() {
           Private Hire
         </button>
       </div>
+
       <div className="show-info">
         {showHire && <Hire />}
+
         {showEvents && (
           <>
-            <p>
-              To book events and enjoy exclusive member experiences, please sign
-              in to your account.
-            </p>
-            <Link to="/SignIn">
-              <button className="event-sign-in">Sign in</button>
-            </Link>
+            {user ? (
+              <WhatsOn />
+            ) : (
+              <>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "18px",
+                    marginTop: "40px",
+                  }}
+                >
+                  To book events and enjoy exclusive member experiences, please
+                  sign in to your account.
+                </p>
+                <div style={{ textAlign: "center", marginTop: "20px" }}>
+                  <Link to="/SignIn">
+                    <button className="event-sign-in">Sign in</button>
+                  </Link>
+                </div>
+              </>
+            )}
           </>
         )}
       </div>
+
       <Footer />
     </>
   );
