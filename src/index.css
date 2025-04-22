@@ -2,6 +2,7 @@ body {
   max-width: 100%;
   font-family: "Newsreader", serif !important;
   background-color: #faf8f3 !important;
+  padding: 10px;
 }
 nav {
   display: flex;
@@ -225,7 +226,8 @@ input[type="password"] {
   align-items: center;
 }
 .sign-in-button,
-.event-sign-in {
+.event-sign-in,
+.button-booked {
   border-radius: 10px;
   padding: 10px;
   margin-top: 30px;
@@ -234,7 +236,8 @@ input[type="password"] {
   color: black;
 }
 .sign-in-button:hover,
-.event-sign-in:hover {
+.event-sign-in:hover,
+.button-booked:hover {
   border-color: white;
   background-color: #a8b6a1;
   opacity: 0.8;
@@ -242,7 +245,8 @@ input[type="password"] {
   box-shadow: 0 5px #999;
 }
 .sign-in-button:active,
-.event-sign-in:active {
+.event-sign-in:active,
+.button-booked:active {
   box-shadow: 0 2px #666;
 }
 .form-select {
@@ -253,4 +257,12 @@ input[type="password"] {
 }
 .icons-social {
   padding-right: 30px;
+}
+.header-icon {
+  font-size: 20px;
+}
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
