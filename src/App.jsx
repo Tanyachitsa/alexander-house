@@ -5,6 +5,7 @@ import Membership from "./pages/Membership";
 import SignIn from "./pages/SignIn";
 import Wellness from "./pages/Wellness";
 import Events from "./pages/Events";
+import LogOut from "./pages/SignOut";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/Events" element={<Events />} />
         <Route path="/Membership" element={<Membership />} />
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/logout" element={<LogOut />} />
       </Routes>
     </>
   );
