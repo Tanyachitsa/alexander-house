@@ -224,7 +224,8 @@ input[type="password"] {
   justify-content: center;
   align-items: center;
 }
-.sign-in-button {
+.sign-in-button,
+.event-sign-in {
   border-radius: 10px;
   padding: 10px;
   margin-top: 30px;
@@ -232,14 +233,16 @@ input[type="password"] {
   border: 2px solid #a8b6a1;
   color: black;
 }
-.sign-in-button:hover {
+.sign-in-button:hover,
+.event-sign-in:hover {
   border-color: white;
   background-color: #a8b6a1;
   opacity: 0.8;
   transition: 0.5s;
   box-shadow: 0 5px #999;
 }
-.sign-in-button:active {
+.sign-in-button:active,
+.event-sign-in:active {
   box-shadow: 0 2px #666;
 }
 .form-select {
