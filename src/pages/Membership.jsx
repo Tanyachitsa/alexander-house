@@ -128,10 +128,6 @@ export default function Membership() {
         <hr />
       </FadeInSection>
       <FadeInSection>
-        <h1 style={{ textAlign: "center", marginTop: "60px" }}>
-          Membership Form
-        </h1>
-
         <MembershipForm />
       </FadeInSection>
       <Footer />
