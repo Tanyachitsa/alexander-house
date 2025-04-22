@@ -1,7 +1,7 @@
 export default function WhatsOn() {
   return (
     <section>
-      <h1>yello whats on</h1>
+      <h1>whatssss onnn</h1>
     </section>
   );
 }
