@@ -4,10 +4,11 @@ import FadeInSection from "../animations/FadeInSection";
 import React from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../data/firebase";
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
 
   const handleSignIn = async (e) => {
     e.preventDefault();
@@ -62,6 +63,9 @@ export default function SignIn() {
                 required
               />
             </div>
+            <p>
+              Don't have an account? <Link to="/Membership">Sign Up</Link>
+            </p>
             <button type="submit" className="sign-in-button">
               Submit
             </button>
