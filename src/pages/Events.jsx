@@ -4,7 +4,7 @@ import React from "react";
 import WhatsOn from "../components/WhatsOn";
 import Hire from "../components/Hire";
 import FadeInSection from "../animations/FadeInSection";
-
+import { Link } from "react-router-dom";
 export default function Events() {
   const [showHire, setShowHire] = React.useState(false);
   const [showEvents, setShowEvents] = React.useState(false);
@@ -65,7 +65,17 @@ export default function Events() {
       </div>
       <div className="show-info">
         {showHire && <Hire />}
-        {showEvents && <WhatsOn />}
+        {showEvents && (
+          <>
+            <p>
+              To book events and enjoy exclusive member experiences, please sign
+              in to your account.
+            </p>
+            <Link to="/SignIn">
+              <button className="event-sign-in">Sign in</button>
+            </Link>
+          </>
+        )}
       </div>
       <Footer />
     </>
