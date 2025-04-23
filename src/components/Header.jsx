@@ -21,7 +21,7 @@ export default function Header() {
     <nav>
       <img
         className="logo"
-        src="/src/Media/AlexanderHouse.png"
+        src="/media/AlexanderHouse.png"
         alt="Alexander House logo"
       />
       <motion.ul

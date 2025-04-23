@@ -23,7 +23,7 @@ export default function Homepage() {
       <FadeInSection>
         <video
           className="video-compilation"
-          src="/src/Media/homepage.mp4"
+          src="/media/homepage.mp4"
           type="video/mp4"
           autoPlay
           loop
@@ -68,7 +68,7 @@ export default function Homepage() {
             <div className="col">
               <img
                 className="homepage-stays"
-                src="/src/Media/houseMedia/egypt.jpg"
+                src="/media/houseMedia/egypt.jpg"
                 alt="image of a hotel"
               />
             </div>
@@ -119,7 +119,7 @@ export default function Homepage() {
             <div className="col">
               <img
                 className="homepage-events"
-                src="/src/Media/homepage-events.jpg"
+                src="/media/homepage-events.jpg"
                 alt="image of a hotel with a pool"
               />
             </div>
@@ -133,7 +133,7 @@ export default function Homepage() {
             <div className="col">
               <img
                 className="homepage-wellness"
-                src="/src/Media/homepage-wellness.jpg"
+                src="/media/homepage-wellness.jpg"
                 alt="image of a hotel with a pool"
               />
             </div>

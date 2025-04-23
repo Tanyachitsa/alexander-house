@@ -11,11 +11,7 @@ export default function Footer() {
       <div className="container text-center">
         <div className="row">
           <div className="col">
-            <img
-              src="./src/Media/award.png"
-              alt="award pictures"
-              height={150}
-            />
+            <img src="/media/award.png" alt="award pictures" height={150} />
           </div>
           <div className="col">
             <p className="address-container">

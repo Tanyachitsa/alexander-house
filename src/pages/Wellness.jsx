@@ -34,7 +34,7 @@ export default function Wellness() {
           <div class="row">
             <div class="col">
               <img
-                src="/src/Media/gym.jpg"
+                src="/media/gym.jpg"
                 alt="picture of the gym"
                 width={500}
                 className="gymImg"
@@ -98,7 +98,7 @@ export default function Wellness() {
             </div>
             <div class="col">
               <img
-                src="/src/Media/spa.jpg"
+                src="/media/spa.jpg"
                 alt="image of a sauna"
                 className="spaImage"
                 width={500}
@@ -112,7 +112,7 @@ export default function Wellness() {
           <div class="row">
             <div class="col">
               <img
-                src="/src/Media/passes.jpg"
+                src="/media/passes.jpg"
                 alt="image of gym weights"
                 height={500}
                 style={{ paddingBottom: "20px" }}
@@ -127,7 +127,7 @@ export default function Wellness() {
             </div>
             <div class="col">
               <img
-                src="/src/Media/training.jpg"
+                src="/media/training.jpg"
                 alt="image of 2 people in the gym"
                 height={500}
                 style={{ paddingBottom: "20px" }}
@@ -142,7 +142,7 @@ export default function Wellness() {
             </div>
             <div class="col">
               <img
-                src="/src/Media/classes.jpg"
+                src="/media/classes.jpg"
                 alt="image of a pilates studio"
                 height={500}
                 style={{ paddingBottom: "20px" }}
