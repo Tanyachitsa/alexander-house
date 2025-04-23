@@ -47,16 +47,29 @@ export default function Header() {
           <li>Membership</li>
         </Link>
       </motion.ul>
+
       {user ? (
-        <div
-          className="user-info"
-          style={{ display: "flex", alignItems: "center", gap: "10px" }}
-        >
-          <FontAwesomeIcon icon={faUser} className="header-icon" />
-          <br />
-          <Link to="/logout">
-            <p className="logout-button">Log out</p>
-          </Link>
+        <div className="dropdown the-dropdown">
+          <button
+            className="btn btn-secondary dropdown-toggle user-info"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <FontAwesomeIcon icon={faUser} className="header-icon" />
+          </button>
+          <ul className="dropdown-menu dropdown-content">
+            <li>
+              <p className="dropdown-item" href="#">
+                {user.email}
+              </p>
+            </li>
+            <li>
+              <Link to="/logout">
+                <p className="logout-button">Log out</p>
+              </Link>
+            </li>
+          </ul>
         </div>
       ) : (
         <Link

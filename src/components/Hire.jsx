@@ -11,7 +11,7 @@ export default function Hire() {
           <div className="row">
             <div className="col">
               <img
-                src="/src/Media/wedding.jpg"
+                src="/media/wedding.jpg"
                 alt="image of an outdoor wedding"
                 style={{ height: "300px", paddingLeft: "40px" }}
               />
@@ -57,7 +57,7 @@ export default function Hire() {
             </div>
             <div className="col">
               <img
-                src="/src/Media/Privateroom.jpg"
+                src="/media/Privateroom.jpg"
                 alt="image of a private meeting room"
                 style={{ height: "300px", paddingLeft: "40px" }}
               />
@@ -71,7 +71,7 @@ export default function Hire() {
             <div className="col">
               <img
                 className="business-room"
-                src="/src/Media/business.jpg"
+                src="/media/business.jpg"
                 alt="meeting room with large table"
                 style={{ height: "300px", paddingLeft: "40px" }}
               />
